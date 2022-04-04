@@ -15,5 +15,5 @@ for aspecto in ["sbp","ldl",'tipo A']:
     boxplot=data.boxplot()
     boxplot.plot()
     plt.title(aspecto)
-    plt.savefig("H Gráficos\ "+aspecto+".png")
+    plt.savefig("H Gráficos\\"+aspecto+".png")
     plt.show()

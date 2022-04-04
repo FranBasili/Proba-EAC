@@ -18,5 +18,5 @@ for aspecto in ["sbp","ldl",'tipo A']:
     hist.set_ylabel("Frecuencia")
     hist.plot()
     plt.title(aspecto)
-    plt.savefig("I Gráficos\ "+aspecto+".png")
+    plt.savefig("I Gráficos\\" + aspecto + ".png")
     plt.show()

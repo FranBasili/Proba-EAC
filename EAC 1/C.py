@@ -9,5 +9,5 @@ green_diamond = dict(markerfacecolor='b', marker='X')
 for aspecto in ['sbp','ldl']:
     plt.boxplot(data[aspecto], flierprops=green_diamond)
     plt.title(aspecto)
-    plt.savefig("C Gráficos\ "+aspecto+".png")
+    plt.savefig("C Gráficos\\"+aspecto+".png")
     plt.show()

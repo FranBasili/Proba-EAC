@@ -19,5 +19,5 @@ for x in range(0, len(sbp)):
     plt.title("LDL")
     plt.tight_layout()
 
-plt.savefig("A Gráficos\ "+"CteVsVM"+".png")
+plt.savefig("A Gráficos\\" + "CteVsVM" + ".png")
 plt.show()
