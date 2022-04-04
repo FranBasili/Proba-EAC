@@ -17,4 +17,3 @@ for aspecto in ["sbp","ldl",'tipo A']:
     plt.title(aspecto)
     plt.savefig("H Gráficos\ "+aspecto+".png")
     plt.show()
-
