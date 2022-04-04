@@ -15,12 +15,11 @@ file.write("Proporción de muestras:\n")
 file.write(str(round(count/len(sbp)*100, 4)) + "%\n")
 
 for i in range(0, len(sbp)):
-    plt.plot(ldl[i], sbp[i], 'x',color='blue')
-plt.xlabel('LDL')
-plt.ylabel('SBP')
-plt.title("SBP vs LDL")
+    plt.plot(sbp[i], ldl[i], 'x',color='blue')
+plt.xlabel('SBP')
+plt.ylabel('LDL')
 
-plt.axhline(y=130, xmin=0, xmax=0.5, color='r', linestyle='-.', linewidth=2) # Plot a horizontal line using axhline() in pyplot
-plt.axvline(x=8, ymin=0, ymax=0.3, color='r', linestyle='-.', linewidth=2)  # Plot a vertical line using axvline() in pyplot
+plt.axhline(y=8, xmin=0, xmax=0.3, color='r', linestyle='-.', linewidth=2) # Plot a horizontal line using axhline() in pyplot
+plt.axvline(x=130, ymin=0, ymax=0.5, color='r', linestyle='-.', linewidth=2)  # Plot a vertical line using axvline() in pyplot
 plt.savefig("E Gráficos\\"+"SBPvsLDL"+".png")
 plt.show()
