@@ -27,5 +27,6 @@ for aspecto in ['sbp','ldl']:
     plt.title("Polígono de frecuencias relativas de " + aspecto)
     plt.plot(f, h, 'o-')
     plt.xlabel("Valores de " + aspecto)
+    plt.ylabel("Frecuencia relativa")
     plt.savefig("D Gráficos\\" + aspecto)
     plt.show()
