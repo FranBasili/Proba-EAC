@@ -16,6 +16,7 @@ for aspecto in ["sbp","ldl",'tipo A']:
     shape = data.shape              
     hist=data.plot.hist(bins=math.ceil(math.log(shape[0])), alpha=0.25)
     hist.set_ylabel("Frecuencia")
+    hist.set_xlabel(aspecto)
     hist.plot()
     plt.title(aspecto)
     plt.savefig("I Gráficos\\" + aspecto + ".png")
