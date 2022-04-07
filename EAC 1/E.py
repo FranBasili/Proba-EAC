@@ -10,9 +10,9 @@ count = 0
 for j in range(0, len(sbp)):
     if (sbp[j] < 130 and ldl[j] < 8):
         count = count + 1
-file = open("E Resultados.txt","w") 
+file = open("E Resultados.txt","w")
 file.write("Proporción de muestras:\n")
-file.write(str(round(count/len(sbp)*100, 4)) + "%\n")
+file.write(str(round(count/len(sbp)*100, 4)) + "%\n") # Proporción de muestras
 
 for i in range(0, len(sbp)):
     plt.plot(sbp[i], ldl[i], 'x',color='blue')
@@ -21,5 +21,5 @@ plt.ylabel('LDL')
 
 plt.axhline(y=8, xmin=0, xmax=0.3, color='r', linestyle='-.', linewidth=2) # Plot a horizontal line using axhline() in pyplot
 plt.axvline(x=130, ymin=0, ymax=0.5, color='r', linestyle='-.', linewidth=2)  # Plot a vertical line using axvline() in pyplot
-plt.savefig("E Gráficos\\"+"SBPvsLDL"+".png")
+plt.savefig("E Gráficos\\"+"SBPvsLDL"+".png")   # Guardo la figura como png en la carpeta E Gráficos
 plt.show()
