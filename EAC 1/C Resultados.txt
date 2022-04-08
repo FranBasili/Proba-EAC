@@ -1,0 +1,3 @@
+Porcentajes de Outliers:
+sbp: 3.3%
+ldl: 2.86%

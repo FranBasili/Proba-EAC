@@ -26,7 +26,7 @@ for Group in [GrupoA, GrupoB, GrupoC]:
     for aspect in ['sbp', 'ldl', 'tipo A']:
         media = Group[aspect].mean()
         simetria = Group[aspect].skew(axis = 0, skipna = True)
-        table.append([aspect, media, simetria])
+        table.append([aspect, round(media, 2), round(simetria,2)])
 
     file.write(tabulate(table))
     file.write("\n\n")
