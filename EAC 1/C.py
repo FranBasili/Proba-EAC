@@ -16,6 +16,6 @@ for aspecto in ['sbp','ldl']:
             count = count + 1
     file.write(aspecto + ": " + str(round(count/len(data[aspecto])*100, 2)) + "%\n") 
     plt.boxplot(data[aspecto], flierprops=outliersColor)
-    plt.title(aspecto)
+    plt.ylabel(aspecto)
     plt.savefig("C Gráficos\\"+aspecto+".png")
     plt.show()
